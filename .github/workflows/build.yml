@@ -1,0 +1,16 @@
+
+on:
+  push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install JDK 8
+      run: sudo apt-get install openjdk-8-jdk
+    - name: Install Apache Maven
+      run: sudo apt-get install maven
+    - name: Install Git
+      run: sudo apt-get install git
+    - name: Install Dependencies
+      run: mv
